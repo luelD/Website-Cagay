@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="outer-container">      
+            <form action="action_page.php" method="post">
+                <h2>Login</h2>
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+            </form>       
+    </div>
+</body>
+</html>
