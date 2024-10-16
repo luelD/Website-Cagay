@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+    background-image: url('https://imgs.search.brave.com/-QsCV-dgHEDK0wLFwzjR_XoiV1O1kVu-v5iArhxo5kM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9nZXR3/YWxscGFwZXJzLmNv/bS93YWxscGFwZXIv/ZnVsbC8yLzAvNi8x/MTAwMzcuanBn');
+}
+
+.navbar {
+    background-color: #000000c0; /* Dark background for the navbar */
+    padding: 10px 20px; /* Spacing for the navbar */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between logo and buttons */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    font-size: 24px; /* Size of the logo */
+    text-decoration: none; /* No underline */
+    color: #ffffff; /* Logo color */
+}
+
+.search-form {
+    flex-grow: 1; /* Allow the search form to take available space */
+    display: flex; /* Flexbox for search */
+    justify-content: center; /* Center search form horizontally */
+}
+
+.form-control {
+    margin-right: 10px; /* Spacing between search input and button */
+    padding: 8px; /* Padding for input */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ced4da; /* Border color */
+}
+
+.nav-buttons {
+    display: flex; /* Flexbox for buttons */
+}
+
+.nav-button {
+    margin-left: 10px; /* Space between buttons */
+    text-decoration: none; /* No underline */
+    color: #ffffff; /* Button color */
+    padding: 8px 12px; /* Padding for buttons */
+    border: 1px solid transparent; /* Default border */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.nav-button:hover {
+    background-color: #000000;                      
+    color: #ffffff; 
+}
+
+.container {
+    text-align: center;
+    -webkit-text-fill-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.801); 
+    padding: 50px;                                                                                                   
+    margin-top: 50px;
+    border-radius: 5px;
+}
