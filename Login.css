@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 
-.outer-container {
+.container {
     background-color: rgba(255, 255, 255, 0.5); 
     backdrop-filter: blur(10px);
     padding: 100px;
