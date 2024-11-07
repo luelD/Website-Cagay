@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: #000000d0;
+    background-color: #000000;
     padding: 10px 20px;
     display: flex; 
     justify-content: space-between; 
@@ -63,23 +63,21 @@ body {
     margin-top: 50px;
     border-radius: 5px;
 }
-<style>
-        /* Navbar styling */
-        .navbar {
-            background-color: #f8f9fa;
-        }
 
-        .navbar-nav .nav-link {
-            transition: color 0.3s ease, background-color 0.3s ease;
-        }
+.navbar {
+    background-color: #f8f9fa;
+}
 
-        .navbar-nav .nav-link:hover {
-            color: #fff;
-            background-color: #007bff;  /* Blue background on hover */
-            text-decoration: underline;   /* Underline on hover */
-        }
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
 
-        .navbar-brand:hover {
-            color: #007bff;  /* Change brand color on hover */
-        }
-    </style>
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: #1c1d1fbe; 
+    text-decoration: underline;  
+}
+
+.navbar-brand:hover {
+    color: #232629e7; 
+}

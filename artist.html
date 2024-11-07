@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Artist.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Artist</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HOMEPAGE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="music.html">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="artist.html">Artist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="albums.html">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Artist Image and Bio -->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://th.bing.com/th/id/OIP.w7mfV0UpUJAq6S2uegXlewHaEL?w=301&h=180&c=7&r=0&o=5&pid=1.7" alt="Artist Name" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <h1>Artist Name</h1>
+                <p><strong>Biography:</strong> Ben&Ben is a Filipino indie folk-pop band from Manila, formed in 2016 by twin brothers Paolo and Miguel Benjamin Guico (lead vocals and acoustic guitars). Initially known as The Benjamins, they expanded into a 9-piece ensemble and adopted their current name.</p>
+            </div>
+        </div>
+
+        <!-- Discography (Albums List) -->
+        <p><strong>Discography:</strong> Ben&Ben has recorded and written material for two studio albums and one extended play (EP). They have collaborated with other artists and featured on songs on their respective albums.</p>
+        <div class="row">
+            <!-- Example Album Card -->
+        
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x300.png?text=Album+Cover" class="card-img-top" alt="Album Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Album Name</h5>
+                        <p class="card-text">Released: 2023</p>
+                        <a href="albums.html" class="btn btn-primary">Explore Album</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Another Example Album Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x300.png?text=Album+Cover" class="card-img-top" alt="Album Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Album Name</h5>
+                        <p class="card-text">Released: 2022</p>
+                        <a href="albums.html" class="btn btn-primary">Explore Album</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Events (Concerts) -->
+        <h2>Upcoming Events</h2>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+                Concert Name - Date | Location
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                Concert Name - Date | Location
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                Concert Name - Date | Location
+            </a>
+        </div>
+
+        <!-- Latest Release -->
+        <h2>Latest Release</h2>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x300.png?text=Latest+Single" class="img-fluid rounded-start" alt="Latest Single">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Latest Song</h5>
+                        <p class="card-text">This is Artist Name's latest single, available now on all streaming platforms.</p>
+                        <a href="https://open.spotify.com" class="btn btn-success" target="_blank">Listen Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Video -->
+        <h2>Featured Music Video</h2>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer with social media links -->
+    <footer class="bg-light text-center py-4">
+        <p>Follow Artist Name on social media!</p>
+        <a href="https://facebook.com" class="btn btn-primary" target="_blank">Facebook</a>
+        <a href="https://twitter.com" class="btn btn-info" target="_blank">Twitter</a>
+        <a href="https://instagram.com" class="btn btn-danger" target="_blank">Instagram</a>
+    </footer>
+</body>
+</html>
