@@ -2,70 +2,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-image: url('https://imgs.search.brave.com/-QsCV-dgHEDK0wLFwzjR_XoiV1O1kVu-v5iArhxo5kM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9nZXR3/YWxscGFwZXJzLmNv/bS93YWxscGFwZXIv/ZnVsbC8yLzAvNi8x/MTAwMzcuanBn');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    background-repeat: 2x;
+    background-repeat: no-repeat;
     height: 100vh;
-    margin: 0;
 }
 
 .navbar {
     background-color: #000000;
     padding: 10px 20px;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
-    font-size: 24px; 
-    text-decoration: none; 
-    color: #ffffff;
-}
-
-.search-form {
-    flex-grow: 1;
-    display: flex; 
-    justify-content: center; 
-}
-
-.form-control {
-    margin-right: 10px; 
-    padding: 8px; 
-    border-radius: 4px; 
-    border: 1px solid #ced4da; 
-}
-
-.nav-buttons {
-    display: flex; 
-}
-
-.nav-button {
-    margin-left: 10px;
+.navbar-brand {
+    font-size: 24px;
     text-decoration: none;
-    color: #ffffff; 
-    padding: 8px 12px; 
-    border: 1px solid transparent; 
-    border-radius: 10px; 
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.nav-button:hover {
-    background-color: #000000;                      
-    color: #ffffff; 
-}
-
-.container {
-    text-align: center;
-    -webkit-text-fill-color: #ffffff9f;
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 50px;                                                                                                   
-    margin-top: 50px;
-    border-radius: 5px;
-}
-
-.navbar {
-    background-color: #f8f9fa;
+    color: #ffffff;
 }
 
 .navbar-nav .nav-link {
@@ -74,10 +28,43 @@ body {
 
 .navbar-nav .nav-link:hover {
     color: #fff;
-    background-color: #1c1d1fbe; 
-    text-decoration: underline;  
+    background-color: #1c1d1fbe;
+    text-decoration: underline;
 }
 
-.navbar-brand:hover {
-    color: #232629e7; 
+.container {
+    text-align: center;
+    color: #ffffff9f;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+/* Optional: Remove margins for form elements */
+.form-control {
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+/* Optional: Styling for the nav buttons */
+.nav-buttons {
+    display: flex;
+}
+
+.nav-button {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
