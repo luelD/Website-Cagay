@@ -4,7 +4,7 @@ body {
     background-image: url('https://imgs.search.brave.com/-QsCV-dgHEDK0wLFwzjR_XoiV1O1kVu-v5iArhxo5kM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9nZXR3/YWxscGFwZXJzLmNv/bS93YWxscGFwZXIv/ZnVsbC8yLzAvNi8x/MTAwMzcuanBn');
     background-size: cover; 
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: 2x;
     height: 100vh;
     margin: 0;
 }
@@ -57,9 +57,29 @@ body {
 
 .container {
     text-align: center;
-    -webkit-text-fill-color: #ffffff;
+    -webkit-text-fill-color: #ffffff9f;
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 50px;                                                                                                   
     margin-top: 50px;
     border-radius: 5px;
 }
+<style>
+        /* Navbar styling */
+        .navbar {
+            background-color: #f8f9fa;
+        }
+
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff;
+            background-color: #007bff;  /* Blue background on hover */
+            text-decoration: underline;   /* Underline on hover */
+        }
+
+        .navbar-brand:hover {
+            color: #007bff;  /* Change brand color on hover */
+        }
+    </style>

@@ -9,56 +9,98 @@
     <title>Homepage</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="logo" href="#">LD</a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            <a href="Login.html" class="nav-button">Log Out</a> 
+            <a class="navbar-brand" href="#">HOMEPAGE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="music.html">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artist.html">Artists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="albums.html">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
+    <!-- Main content -->
     <div class="container">
         <h1>Welcome to the Music Homepage!</h1>
         <p>You are now logged in and ready to explore your favorite music.</p>
         
+        <!-- Carousel for featured videos -->
         <h2>Featured Music Videos</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <h4>Video 1</h4>
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/bSz1Liag8No" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/bSz1Liag8No" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/KhuxjALISf4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/q0jFnzVIw7A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h4>Video 2</h4>
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/KhuxjALISf4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-4">
-                <h4>Video 3</h4>
-                <iframe width="100%" height="200" src="https://www.youtube.com/embed/q0jFnzVIw7A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
         <h2>Artist Spotlight</h2>
         <div class="card mb-3">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="path/to/your/artist.jpg" class="img-fluid rounded-start" alt="Artist Name">
+                    <img src="https://th.bing.com/th/id/OIP.w7mfV0UpUJAq6S2uegXlewHaEL?w=301&h=180&c=7&r=0&o=5&pid=1.7" alt="Artist Name" class="img-fluid rounded-start">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title">Artist Name</h5>
-                        <p class="card-text">This month’s spotlight is on Artist Name.</p>
-                        <a href="#" class="btn btn-success">Explore More</a>
+                        <p class="card-text">This month s spotlight is on Artist Name.</p>
+                        <a href="albums.html" class="btn btn-success">Explore More</a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Music Playlist Section -->
+        <h2>Music Playlist</h2>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Curated Playlist</h5>
+                <p class="card-text">Listen to our hand-picked tracks for your listening pleasure.</p>
+                <!-- Example of embedded Spotify playlist -->
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer with social media links -->
+    <footer class="bg-light text-center py-4">
+        <p>Follow us on social media!</p>
+        <a href="https://facebook.com" class="btn btn-primary" target="_blank">Facebook</a>
+        <a href="https://twitter.com" class="btn btn-info" target="_blank">Twitter</a>
+        <a href="https://instagram.com" class="btn btn-danger" target="_blank">Instagram</a>
+    </footer>
+
 </body>
-
-
-
 </html>
-
